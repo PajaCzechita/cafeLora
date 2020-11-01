@@ -20,25 +20,6 @@ navAll.forEach(nav => {
   })
 });
 
-const drink =
-{
-  id: 'romano',
-  name: 'Romano',
-  ordered: false,
-  layers: [
-    {
-      color: '#fbdf5b',
-      label: 'citrón',
-    },
-    {
-      color: '#613916',
-      label: 'espresso',
-    },
-  ],
-};
-
-document.querySelector('.drinks-list').appendChild(Drink(drink))
-
 /* END - menu */
 
 fetch('http://cafelora.kodim.cz/api/drinks')
@@ -49,4 +30,4 @@ fetch('http://cafelora.kodim.cz/api/drinks')
       allDrinks.appendChild(Drink(drink))
     });
 
-  })
+  });
