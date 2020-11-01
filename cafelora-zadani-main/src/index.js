@@ -1,5 +1,6 @@
 import './index.html';
 import './style.css';
+import { Layer } from './Layer/layer';
 
 console.log('funguju!');
 
@@ -45,3 +46,12 @@ ordedBtn.addEventListener('click', () => {
 });
 
 /* END - Ordering */
+
+/* START - Layer */
+
+const addLayer = document.querySelector('.drink__info');
+
+const dataLayer = [
+  { color: '#feeeca', label: 'mléčná pěna' },
+]
+addLayer.innerHTML = Layer(dataLayer[0]);

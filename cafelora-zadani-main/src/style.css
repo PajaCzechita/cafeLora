@@ -174,11 +174,11 @@ nav a:hover {
 .drink__cup--selected img {
   display: none;
 }
-
+/*
 .drink__info {
   margin-left: 1rem;
 }
-
+*/
 .drink__controls {
   margin-top: 1rem;
 
@@ -209,7 +209,7 @@ nav a:hover {
 .order-btn:active {
   background-color: #e67e51;
 }
-
+/*
 .layer {
   display: flex;
   padding: 0.25rem;
@@ -230,7 +230,7 @@ nav a:hover {
 
   line-height: 1rem;
 }
-
+*/
 .gallery {
   padding-top: 0;
   height: 100vh;
