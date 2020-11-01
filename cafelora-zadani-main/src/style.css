@@ -235,11 +235,38 @@ nav a:hover {
   padding-top: 0;
   height: 100vh;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: white;
   background-image: url('./img/gallery.jpg');
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
+}
+
+.description {
+  position: relative;
+  width: 80%;
+  text-align: center;
+}
+
+p {
+  position: relative;
+  z-index: 1;
+  padding: 30px;
+  font-size: 25px;
+}
+
+.styles {
+  position: absolute;
+  background-color: #301a1a;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
 }
 
 .contacts {
