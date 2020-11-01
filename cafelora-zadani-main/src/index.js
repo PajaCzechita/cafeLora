@@ -3,7 +3,7 @@ import './style.css';
 
 console.log('funguju!');
 
-/* Menu hide/unhide */
+/* START - Menu hide/unhide */
 
 const navHamburger = document.querySelector('#nav-btn')
 navHamburger.addEventListener('click', () => {
@@ -19,12 +19,29 @@ navAll.forEach(nav => {
   })
 });
 
-/* End menu */
+/* END - menu */
 
 /* START - Ordering */
+let ordered = false;
 const ordedBtn = document.querySelector('.order-btn');
 
 ordedBtn.addEventListener('click', () => {
-  document.querySelector('.drink__cup').classList.add("drink__cup--selected");
-  ordedBtn.textContent = 'Zrušit'
-})
+  const elmDrink = document.querySelector('.drink__cup');
+
+
+  if (ordered === false) {
+
+    elmDrink.classList.toggle("drink__cup--selected");
+    ordedBtn.textContent = 'Zrušit'
+    ordered = true;
+
+  } else {
+
+    elmDrink.classList.toggle("drink__cup--selected");
+    ordedBtn.textContent = 'Objednat'
+    ordered = false;
+
+  }
+});
+
+/* END - Ordering */
