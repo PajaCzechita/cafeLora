@@ -1,6 +1,6 @@
 import './index.html';
 import './style.css';
-import { Layer } from './Layer/layer';
+import { Drink } from './Drink/index.js';
 
 console.log('funguju!');
 
@@ -20,9 +20,28 @@ navAll.forEach(nav => {
   })
 });
 
+const drink =
+{
+  id: 'romano',
+  name: 'Romano',
+  ordered: false,
+  layers: [
+    {
+      color: '#fbdf5b',
+      label: 'citrón',
+    },
+    {
+      color: '#613916',
+      label: 'espresso',
+    },
+  ],
+};
+
+document.querySelector('.drinks-list').appendChild(Drink(drink))
+
 /* END - menu */
 
-/* START - Ordering */
+/* START - Ordering
 let ordered = false;
 const ordedBtn = document.querySelector('.order-btn');
 
@@ -44,12 +63,9 @@ ordedBtn.addEventListener('click', () => {
 
   }
 });
+END - Ordering */
 
-/* END - Ordering */
-
-/* START - Layer */
-
-const addLayer = document.querySelector('.drink__info');
+/* START - Layer
 
 const dataLayer = [
   {
@@ -66,8 +82,4 @@ const dataLayer = [
   },
 ];
 
-for (let i = 0; i < dataLayer.length; i++) {
-  addLayer.innerHTML += Layer(dataLayer[i]);
-}
-
-/* END - layer */
+END - layer */
