@@ -20,3 +20,11 @@ navAll.forEach(nav => {
 });
 
 /* End menu */
+
+/* START - Ordering */
+const ordedBtn = document.querySelector('.order-btn');
+
+ordedBtn.addEventListener('click', () => {
+  document.querySelector('.drink__cup').classList.add("drink__cup--selected");
+  ordedBtn.textContent = 'Zrušit'
+})
