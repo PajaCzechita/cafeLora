@@ -52,6 +52,22 @@ ordedBtn.addEventListener('click', () => {
 const addLayer = document.querySelector('.drink__info');
 
 const dataLayer = [
-  { color: '#feeeca', label: 'mléčná pěna' },
-]
-addLayer.innerHTML = Layer(dataLayer[0]);
+  {
+    color: '#feeeca',
+    label: 'mléčná pěna',
+  },
+  {
+    color: '#fed7b0',
+    label: 'teplé mléko',
+  },
+  {
+    color: '#613916',
+    label: 'espresso',
+  },
+];
+
+for (let i = 0; i < dataLayer.length; i++) {
+  addLayer.innerHTML += Layer(dataLayer[i]);
+}
+
+/* END - layer */
